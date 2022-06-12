@@ -29,5 +29,5 @@ map("v", "L", "S", { noremap = false })
 -- 跳跃 
 map("n", "(", "^", { noremap = false })
 map("n", ")", "$", { noremap = false })
-map("n", "^", ")", { noremap = false })
-map("n", "$", "(", { noremap = false })
+map("n", "^", "(", { noremap = false })
+map("n", "$", ")", { noremap = false })
