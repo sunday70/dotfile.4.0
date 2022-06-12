@@ -274,8 +274,8 @@
   noremap L S
   noremap ( ^
   noremap ) $
-  noremap ^ )
-  noremap $ (
+  noremap ^ (
+  noremap $ )
 
   let mapleader=','
   nnoremap <Leader>2 :set tabstop=2  softtabstop=2 shiftwidth=2<CR>
