@@ -34,6 +34,7 @@ alias tj="trans :ja -brief"
 alias ca="caffeinate"
 alias d="diskutil"
 alias ic="kitty +kitten icat"
+alias w3="W3M_IMG2SIXEL=img2sixel w3m -sixel -o display_image=1"
 
 # mac ruby 更新包管理器
 eval "$(rbenv init - zsh)"
