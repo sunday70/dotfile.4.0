@@ -1,7 +1,7 @@
 # fast focus desktop
-shift + lctrl + alt + cmd - l : yabai -m space --focus recent
-shift + lctrl + alt + cmd - c : yabai -m space --focus prev || yabai -m space --focus last
-shift + lctrl + alt + cmd - r : yabai -m space --focus next || yabai -m space --focus first
+alt - l : yabai -m space --focus recent
+alt - c : yabai -m space --focus prev || yabai -m space --focus last
+alt - r : yabai -m space --focus next || yabai -m space --focus first
 alt - 1 : yabai -m space --focus 1
 alt - 2 : yabai -m space --focus 2
 alt - 3 : yabai -m space --focus 3
@@ -91,7 +91,7 @@ lctrl + alt - f : yabai -m space --balance
 lctrl + alt - g : yabai -m space --toggle padding; yabai -m space --toggle gap
 
 # Rotate windows clockwise and anticlockwise
-alt - r         : yabai -m space --rotate 90
+lctrl + alt - r         : yabai -m space --rotate 90
 shift + alt - r : yabai -m space --rotate 270
 
 # Rotate on X and Y Axis
