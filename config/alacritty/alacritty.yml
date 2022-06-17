@@ -1,7 +1,7 @@
 window:
   padding:
-    x: 16
-    y: 16
+    x: 6
+    y: 6
   decorations: buttonless
   opacity: 1
   dynamic_title: false
