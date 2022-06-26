@@ -79,10 +79,10 @@ shift + alt - c : yabai -m window --toggle float;\
                   yabai -m window --grid 4:4:1:1:2:2
 
 # move floating window
-shift + ctrl - left : yabai -m window --move rel:-20:0
-shift + ctrl - down : yabai -m window --move rel:0:20
-shift + ctrl - up : yabai -m window --move rel:0:-20
-shift + ctrl - right : yabai -m window --move rel:20:0
+shift + lctrl - left : yabai -m window --move rel:-20:0
+shift + lctrl - down : yabai -m window --move rel:0:20
+shift + lctrl - up : yabai -m window --move rel:0:-20
+shift + lctrl - right : yabai -m window --move rel:20:0
 
 # Equalize size of windows
 lctrl + alt - f : yabai -m space --balance
@@ -174,5 +174,5 @@ alt + shift - b : yabai -m window --space prev && yabai -m space --focus prev
 alt + shift - m : yabai -m window --space next && yabai -m space --focus next
 
 # change layout of desktop
-cmd + alt + ctrl - f : yabai -m space --layout float
-cmd + alt + ctrl - b : yabai -m space --layout bsp
+cmd + alt + lctrl - f : yabai -m space --layout float
+cmd + alt + lctrl - b : yabai -m space --layout bsp
