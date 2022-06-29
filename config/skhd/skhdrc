@@ -169,6 +169,7 @@ lctrl + alt + shift - 0 : yabai -m window --space 10
 # alt - x : yabai -m window --close && ~/.config/yabai/auto_close_space_when_space_empty.sh
 
 # Move focus container to workspace
+lctrl + alt + shift - z : yabai -m window --space first && yabai -m space --focus first
 alt + shift - z : yabai -m window --space last && yabai -m space --focus last
 alt + shift - b : yabai -m window --space prev && yabai -m space --focus prev
 alt + shift - m : yabai -m window --space next && yabai -m space --focus next
