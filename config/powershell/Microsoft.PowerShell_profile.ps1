@@ -1,5 +1,3 @@
-oh-my-posh init pwsh --config ~/.config/powershell/craver.omp.json | Invoke-Expression
-
 #  Set-Alias
 Set-Alias co 'cowsay'
 Set-Alias cm 'cmatrix'
@@ -13,4 +11,5 @@ Set-Alias n 'nano'
 Set-Alias z '7z'
 Set-Alias ca 'caffeinate'
 
-#powershell.exe -nologo
+# starship 提示
+Invoke-Expression (&starship init powershell)
