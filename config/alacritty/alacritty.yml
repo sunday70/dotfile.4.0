@@ -1,3 +1,6 @@
+cursor:
+  style: Underline
+
 window:
   padding:
     x: 6
@@ -23,7 +26,7 @@ font:
   bold_italic:
     family: SauceCodePro Nerd Font Mono
     style: Medium Italic
-  size: 11.3
+  size: 11.5
   offset:
     x: 1
     y: 1
@@ -31,6 +34,21 @@ font:
     y: 1
     x: 0
   use_thin_strokes: false
+
+selection:
+  save_to_clipboard: true
+live_config_reload: true
+
+
+# Copyright (c) 2017-present Arctic Ice Studio <development@arcticicestudio.com>
+# Copyright (c) 2017-present Sven Greb <code@svengreb.de>
+
+# Project:    Nord Alacritty
+# Version:    0.1.0
+# Repository: https://github.com/arcticicestudio/nord-alacritty
+# License:    MIT
+# References:
+#   https://github.com/alacritty/alacritty
 
 colors:
   primary:
@@ -80,7 +98,3 @@ colors:
     magenta: '#8c738c'
     cyan: '#6d96a5'
     white: '#aeb3bb'
-
-selection:
-  save_to_clipboard: true
-live_config_reload: true
