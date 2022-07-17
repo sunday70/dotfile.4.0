@@ -64,10 +64,6 @@
   noremap J T
   noremap K N
   noremap L S
-  noremap ( ^
-  noremap ) $
-  noremap ^ (
-  noremap $ )
 
 set rtp+=/opt/homebrew/opt/fzf
 colorscheme nord
