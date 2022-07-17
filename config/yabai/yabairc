@@ -6,8 +6,9 @@ yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
 
 # 焦点
 # yabai -m config focus_follows_mouse          autoraise
-yabai -m config mouse_follows_focus          on
+yabai -m config mouse_follows_focus          off
 yabai -m config window_placement             first_child
+# yabai -m config window_placement             second_child
 
 # 阴影 
 yabai -m config window_topmost               off
@@ -23,10 +24,10 @@ yabai -m config normal_window_opacity        0.95
 # yabai -m config window_border                off
 # yabai -m config window_border_width          3
 # yabai -m config active_window_border_color   0xff81a1c1
-# yabai -m config normal_window_border_color   0x007A808C
 # yabai -m config insert_feedback_color        0xff81a1c1
+# yabai -m config normal_window_border_color   0xff434c5e
 
-yabai -m config auto_balance                 on
+yabai -m config auto_balance                 off
 yabai -m config split_ratio                  0.50
 yabai -m config mouse_modifier               fn
 yabai -m config mouse_action1                move
@@ -34,18 +35,17 @@ yabai -m config mouse_action2                resize
 yabai -m config mouse_drop_action            swap
 
 yabai -m config layout                       bsp
-yabai -m config top_padding                  8
-yabai -m config bottom_padding               8
-yabai -m config left_padding                 8
-yabai -m config right_padding                8
-yabai -m config window_gap                   8
+yabai -m config top_padding                  10
+yabai -m config bottom_padding               10
+yabai -m config left_padding                 10
+yabai -m config right_padding                10
+yabai -m config window_gap                   10
 
 
 # 应用状态
 yabai -m rule --add app="^FaceTime$" manage=off
 yabai -m rule --add app="^App Store$" manage=off
 yabai -m rule --add app="^DaisyDisk$" manage=off
-yabai -m rule --add app="^ExpressVPN$" manage=off
 yabai -m rule --add app="^Motrix$" manage=off
 yabai -m rule --add app="^System Information$" manage=off
 yabai -m rule --add app="^微信$" manage=off
@@ -60,6 +60,10 @@ yabai -m rule --add app="^Alacritty$" manage=off
 yabai -m rule --add app="^Notes$" manage=off
 yabai -m rule --add app="^iTerm2$" manage=off
 yabai -m rule --add app="^哔哩哔哩$" manage=off
+yabai -m rule --add app="^Parallels Desktop$" manage=off
+yabai -m rule --add app="^Music$" manage=off
+yabai -m rule --add app="^QQ$" manage=off
+yabai -m rule --add app="^Safari$" manage=off
 
 # Mac亦可设定
 # yabai -m rule --add app="WeChat" space=1
