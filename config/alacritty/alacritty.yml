@@ -1,5 +1,5 @@
 cursor:
-  style: Underline
+    style: Underline
 
 window:
   padding:
@@ -26,7 +26,7 @@ font:
   bold_italic:
     family: SauceCodePro Nerd Font Mono
     style: Medium Italic
-  size: 11.5
+  size: 12.3
   offset:
     x: 1
     y: 1
@@ -98,3 +98,4 @@ colors:
     magenta: '#8c738c'
     cyan: '#6d96a5'
     white: '#aeb3bb'
+    
