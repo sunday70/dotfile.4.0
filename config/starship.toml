@@ -1,3 +1,15 @@
+# Don't print a new line at the start of the prompt
+add_newline = false
+
+# These symbols will only show when battery levels are 20% or less
+[battery]
+charging_symbol = "⚡️ "
+discharging_symbol = "💀 "
+
+[[battery.display]]  # "bold red" style when capacity is between 0% and 20%
+threshold = 20 
+style = "bold red"
+
 [character]
 success_symbol = " [ ](#a9a1e1)"
 error_symbol = " [ ](#ff6c6b)"
