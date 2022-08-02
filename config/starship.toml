@@ -13,8 +13,8 @@ threshold = 20
 style = "bold red"
 
 [character]
-success_symbol = " [ ](#a9a1e1)"
-error_symbol = " [ ](#bf616a)"
+success_symbol = "[ ](#a9a1e1)"
+error_symbol = "[ ](#bf616a)"
 vicmd_symbol = "[  ](#a3be8c)"
 
 # Third param
