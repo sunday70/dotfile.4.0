@@ -1,3 +1,5 @@
+right_format = """$cmd_duration"""
+
 # Don't print a new line at the start of the prompt
 add_newline = false
 
@@ -12,8 +14,15 @@ style = "bold red"
 
 [character]
 success_symbol = " [ ](#a9a1e1)"
-error_symbol = " [ ](#ff6c6b)"
-vicmd_symbol = "[  ](#98be65)"
+error_symbol = " [ ](#bf616a)"
+vicmd_symbol = "[  ](#a3be8c)"
+
+# Third param
+[directory]
+format = "[ $path]($style) "
+style = "fg:#a9a1e1"
+truncation_length = 3
+truncate_to_repo=false
 
 # Last param in the first line/row
 [cmd_duration]
