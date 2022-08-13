@@ -19,7 +19,7 @@ vicmd_symbol = "[  ](#a3be8c)"
 
 # Third param
 [directory]
-format = "[ $path]($style) "
+format = "[$path]($style) "
 style = "fg:#a9a1e1"
 truncation_length = 3
 truncate_to_repo=false
