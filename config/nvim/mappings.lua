@@ -25,9 +25,3 @@ maps.v["S"] = { "L",  noremap = "false" }
 maps.v["J"] = { "T",  noremap = "false" }
 maps.v["K"] = { "N",  noremap = "false" }
 maps.v["L"] = { "S",  noremap = "false" }
-
--- 跳跃
--- maps.n["("] = { "^", noremap = "false" }
--- maps.n[")"] = { "$", noremap = "false" }
--- maps.n["^"] = { "(", noremap = "false" }
--- maps.n["$"] = { ")", noremap = "false" }
