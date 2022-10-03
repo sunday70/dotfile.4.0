@@ -1,7 +1,7 @@
 ## brew
-*1 --formulae
+* --formulae
 starship nano translate-shell htop neofetch tree fish neovim ranger fzf vim w3m skhd smartmontools cmatrix mas p7zip cowsay yabai youtube-dl pfetch tmux neomutt
-*2 --cask
+* --cask
 alacritty cheatsheet iina mpv teamviewer appcleaner karabiner-elements numi textsniper baidunetdisk daisydisk keycastr pdf-expert ubersicht balenaetcher firefox kitty wine-crossover bartender font-sauce-code-pro-nerd-font mailmaster spotify bilibili-official gimp motrix steam clashx
 
 ## Mac终端命令
@@ -16,5 +16,5 @@ defaults write -g KeyRepeat -int 1 # normal minimum is 2 (30 ms)
 defaults write com.apple.dock springboard-columns -int 10;defaults write com.apple.dock springboard-rows -int 8;defaults write com.apple.dock ResetLaunchPad -bool TRUE;killall Dock
 
 * IdeaVim插件不支持长按连续滚动
-*1. 全局设置：
+* 全局设置：
 defaults write -g ApplePressAndHoldEnabled -bool false
