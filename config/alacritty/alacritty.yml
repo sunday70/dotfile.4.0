@@ -15,17 +15,17 @@ scrolling:
 font:
   normal:
     family: SauceCodePro Nerd Font Mono
-    style: Light
+    style: Regular
   bold:
     family: SauceCodePro Nerd Font Mono
-    style: Medium
+    style: Bold
 
   italic:
     family: SauceCodePro Nerd Font Mono
     style: Light Italic
   bold_italic:
     family: SauceCodePro Nerd Font Mono
-    style: Medium Italic
+    style: Medium Bold
   size: 12.3
   offset:
     x: 1
