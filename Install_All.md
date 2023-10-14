@@ -18,3 +18,5 @@ defaults write com.apple.dock springboard-columns -int 10;defaults write com.app
 * IdeaVim插件不支持长按连续滚动
 * 全局设置：
 defaults write -g ApplePressAndHoldEnabled -bool false
+
+defaults write -g NSRepeatCountBinding -string "^r"
