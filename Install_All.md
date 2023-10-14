@@ -16,8 +16,8 @@ defaults write -g KeyRepeat -int 1 # normal minimum is 2 (30 ms)
 defaults write com.apple.dock springboard-columns -int 10;defaults write com.apple.dock springboard-rows -int 8;defaults write com.apple.dock ResetLaunchPad -bool TRUE;killall Dock
 
 * IdeaVim插件不支持长按连续滚动
-* 全局设置：
+* 全局设置: 
 defaults write -g ApplePressAndHoldEnabled -bool false
 
-* 自动重复多次组合键
+* 自动重复多次组合键: 
 defaults write -g NSRepeatCountBinding -string "^r"
