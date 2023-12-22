@@ -1,0 +1,211 @@
+{
+  "debug.onTaskErrors": "debugAnyway",
+  "editor.fontSize": 14,
+  "terminal.integrated.fontWeightBold": "bold",
+  "open-in-browser.default": "firefox",
+  "terminal.integrated.fontFamily": "SauceCodePro Nerd Font Mono",
+  "explorer.confirmDelete": false,
+  "workbench.colorTheme": "Nord",
+  "json.schemas": [
+
+  ],
+  "scm.inputFontFamily": "",
+  "notebook.output.fontFamily": "SauceCodePro Nerd Font Mono",
+  "editor.fontVariations": false,
+  // vim config
+  "vim.vimrc.enable": true,
+  "vim.vimrc.path": "$HOME/.vscodevimrc",
+  "vim.leader": ",",  // <space>
+  "vim.cursorStylePerMode.insert": "line",  // "underline"
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.cursorStylePerMode.normal": "block",
+  "vim.handleKeys": {
+    "<C-a>": true,
+    "<C-f>": true,
+    "<C-h>": true,
+    "<C-t>": true,
+    "<C-n>": true,
+    "<C-s>": true
+  },
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["<C-h>"],
+      "after": ["Left"]
+    },
+    {
+      "before": ["<C-t>"],
+      "after": ["Down"]
+    },
+    {
+      "before": ["<C-n>"],
+      "after": ["Up"]
+    },
+    {
+      "before": ["<C-s>"],
+      "after": ["Right"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<C-W>", "t"],
+      "after": ["<C-W>", "j"]
+    },
+    {
+      "before": ["<C-W>", "n"],
+      "after": ["<C-W>", "k"]
+    },
+    {
+      "before": ["<C-W>", "s"],
+      "after": ["<C-W>", "l"]
+    },
+    {
+      "before": ["<C-W>", "-"],
+      "after": ["<C-W>", "s"]
+    },
+    {
+      "before": ["t"],
+      "after": ["j"]
+    },
+    {
+      "before": ["n"],
+      "after": ["k"]
+    },
+    {
+      "before": ["s"],
+      "after": ["l"]
+    },
+    {
+      "before": ["j"],
+      "after": ["t"]
+    },
+    {
+      "before": ["k"],
+      "after": ["n"]
+    },
+    {
+      "before": ["l"],
+      "after": ["s"]
+    },
+    {
+      "before": ["T"],
+      "after": ["J"]
+    },
+    {
+      "before": ["N"],
+      "after": ["K"]
+    },
+    {
+      "before": ["S"],
+      "after": ["L"]
+    },
+    {
+      "before": ["J"],
+      "after": ["T"]
+    },
+    {
+      "before": ["K"],
+      "after": ["N"]
+    },
+    {
+      "before": ["L"],
+      "after": ["S"]
+    },
+    {
+      "before": ["<leader>", "d"],
+      "after": ["d", "d"]
+    },
+    {
+      "before": ["<leader>", "i"],
+      "after": [],
+      "commands": [
+        {
+          "command": "workbench.action.terminal.focus"
+        }
+      ]
+    },
+    {
+      "before": ["<leader>", "u"],
+      "after": [],
+      "commands": [
+        {
+          "command": "workbench.action.focusActiveEditorGroup"
+        }
+      ]
+    },
+    {
+      "before": ["<leader>", "p"],
+      "after": [],
+      "commands": [
+        {
+          "command": "workbench.action.quickOpen"
+        }
+      ]
+    },
+    {
+      "before": ["<leader>", "o"],
+      "after": [],
+      "commands": [
+        {
+          "command": "workbench.action.quickOpen"
+        }
+      ]
+    },
+    {
+      "before": ["<leader>", "h"],
+      "after": [],
+      "commands": [
+        {
+          "command": "workbench.action.terminal.toggleTerminal"
+        }
+      ]
+    },
+    {
+      "before": ["<leader>", "v"],
+      "after": [],
+      "commands": [
+        {
+          "command": "workbench.action.splitEditor"
+        }
+      ]
+    },
+    // {
+    //   "before": ["<leader>", "h"],
+    //   "after": [],
+    //   "commands": [
+    //     {
+    //       "command": "workbench.action.focusFirstEditorGroup"
+    //     }
+    //   ]
+    // },
+    {
+      "before": ["<leader>", "l"],
+      "after": [],
+      "commands": [
+        {
+          "command": "workbench.action.focusSecondEditorGroup"
+        }
+      ]
+    },
+    {
+      "before": ["<leader>", "s", "c"],
+      "after": [],
+      "commands": [
+        {
+          "command": ":nohl"
+        }
+      ]
+    },
+    {
+      "before": ["<C-l>"],
+      "after": [],
+      "commands": [
+          "workbench.action.files.save"
+      ]
+    }
+  ],
+  "editor.lineNumbers": "relative"
+}

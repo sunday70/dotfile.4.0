@@ -1,0 +1,123 @@
+let mapleader=","
+
+set hlsearch
+set incsearch
+set ignorecase
+set smartcase
+set showmode
+set number relativenumber
+set scrolloff=3
+" set history=1000
+set clipboard=unnamed
+
+" 映射keys
+noremap t j
+noremap n k
+noremap s l
+noremap j t
+noremap k n
+noremap l s
+noremap T J
+noremap N k
+noremap S L
+noremap J T
+noremap K N
+noremap L S
+
+inoremap <C-h> <Left>
+inoremap <C-t> <Down>
+inoremap <C-n> <Up>
+inoremap <C-s> <Right>
+
+" 格式化代码
+map \r <Action>(ReformatCode)
+
+" 清除高亮
+nnoremap <Leader>sc :nohlsearch<CR>
+
+" 保存关闭
+nnoremap <Leader>q  :q!<CR>
+nnoremap <Leader>Q  :qa!<CR>
+
+" idea内置快捷键alt+F1 (使用快捷键 空格+m)
+nnoremap <Leader>m :action SelectIn<CR>
+
+" idea内置快捷键control+E (使用快捷键 空格+e)
+nnoremap <Leader>e :action RecentFiles<CR>
+
+" 以上是自定义快捷键-----------------
+
+" 关于窗口操作 (right: {c:关闭, j k h l: 移动方向, - v: 自下创建, 自右创建})
+" nnoremap <C-W>w <C-W>w
+" nnoremap <C-W>c <C-W>c
+nnoremap <C-W>t <C-W>j
+nnoremap <C-W>n <C-W>k
+" nnoremap <C-W>h <C-W>h
+nnoremap <C-W>s <C-W>l
+nnoremap <C-W>- <C-W>s
+" nnoremap <C-W>v <C-W>v
+
+" ==================================================
+" Show all the provided actions via `:actionlist`
+" ==================================================
+
+" 查找用法
+nnoremap <Leader>fu :action FindUsages<CR>
+
+" 打断点
+nnoremap <Leader>bb :action ToggleLineBreakpoint<CR>
+
+" 查看所有断点
+nnoremap <Leader>br :action ViewBreakpoints<CR>
+
+" DUG启动
+nnoremap <Leader>cd :action ChooseDebugConfiguration<CR>
+
+" 跳转到实体类
+nnoremap <Leader>gc :action GotoClass<CR>
+
+" 跳转到声明
+nnoremap <Leader>gd :action GotoDeclaration<CR>
+
+" 跳转到实现类
+nnoremap <Leader>gi :action GotoImplementation<CR>
+
+" 跳转到测试类(没有则自动建立)
+nnoremap <Leader>gt :action GotoTest<CR>
+
+" 激活maven窗口
+"nnoremap <Leader>mv :action ActivateMavenProjectsToolWindow<CR>
+
+" 修改所有的关联名字
+nnoremap <Leader>rn :action RenameElement<CR>
+
+" 修改当前文件的文件名
+nnoremap <Leader>rf :action RenameFile<CR>
+
+" 显示用法
+nnoremap <Leader>su :action ShowUsages<CR>
+
+" 关闭活动显示板
+nnoremap <Leader>tc :action CloseActiveTab<CR>
+
+" 以下是不常用 -----------------
+
+" 打开命令管理器
+nnoremap <Leader>h Vy<CR>:action ActivateTerminalToolWindow<CR>
+vnoremap <Leader>h y<CR>:action ActivateTerminalToolWindow<CR>
+
+" 添加注释
+nnoremap <Leader>/ :action CommentByLineComment<CR>
+vnoremap <Leader>/ :action CommentByLineComment<CR>
+
+" 改变视图
+nnoremap <Leader>cv :action ChangeView<CR>
+
+"
+nnoremap <Leader>ic :action InspectCode<CR>
+
+" 打开右击菜单
+nnoremap <Leader>pm :action ShowPopupMenu<CR>
+
+" 正常启动工程
+nnoremap <Leader>rc :action ChooseRunConfiguration<CR>

@@ -1,0 +1,13 @@
+vnoremap t j
+vnoremap n k
+vnoremap s l
+vnoremap j t
+vnoremap k n
+vnoremap l s
+
+vnoremap T J
+vnoremap N K
+vnoremap S L
+vnoremap J T
+vnoremap K N
+vnoremap L S
