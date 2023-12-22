@@ -1,1 +1,1 @@
-z1 ALL = (root) NOPASSWD: /opt/homebrew/bin/yabai --load-sa
+who ALL = (root) NOPASSWD: /opt/homebrew/bin/yabai --load-sa
