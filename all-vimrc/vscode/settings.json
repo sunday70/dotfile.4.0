@@ -24,30 +24,14 @@
   "vim.hlsearch": true,
   "vim.cursorStylePerMode.normal": "block",
   "vim.handleKeys": {
-    "<C-a>": true,
-    "<C-f>": true,
-    "<C-h>": true,
-    "<C-t>": true,
-    "<C-n>": true,
-    "<C-s>": true
+    "<C-a>": false,
+    "<C-e>": false,
+    "<C-b>": false,
+    "<C-n>": false,
+    "<C-p>": false,
+    "<C-f>": false
   },
   "vim.insertModeKeyBindings": [
-    {
-      "before": ["<C-h>"],
-      "after": ["Left"]
-    },
-    {
-      "before": ["<C-t>"],
-      "after": ["Down"]
-    },
-    {
-      "before": ["<C-n>"],
-      "after": ["Up"]
-    },
-    {
-      "before": ["<C-s>"],
-      "after": ["Right"]
-    }
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
     {
@@ -204,6 +188,24 @@
       "after": [],
       "commands": [
           "workbench.action.files.save"
+      ]
+    },
+    {
+      "before": ["<leader>", "q"],
+      "after": [],
+      "commands": [
+        {
+          "command": ":wq!"
+        }
+      ]
+    },
+    {
+      "before": ["<leader>", "Q"],
+      "after": [],
+      "commands": [
+        {
+          "command": ":wqa!"
+        }
       ]
     }
   ],

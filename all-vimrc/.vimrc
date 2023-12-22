@@ -36,10 +36,12 @@ noremap J T
 noremap K N
 noremap L S
 
-inoremap <C-h> <Left>
-inoremap <C-t> <Down>
-inoremap <C-n> <Up>
-inoremap <C-s> <Right>
+inoremap <C-b> <Left>
+inoremap <C-n> <Down>
+inoremap <C-p> <Up>
+inoremap <C-f> <Right>
+inoremap <C-a> <Home>
+inoremap <C-e> <End>
 
 " 清除高亮
 nnoremap <Leader>sc :nohlsearch<CR>
