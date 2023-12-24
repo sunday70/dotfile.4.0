@@ -1,6 +1,8 @@
 {
   "debug.onTaskErrors": "debugAnyway",
-  "editor.fontSize": 14,
+  // Controls the font family.
+  "editor.fontFamily": "SauceCodePro Nerd Font Mono",
+  "editor.fontSize": 15,
   "terminal.integrated.fontWeightBold": "bold",
   "open-in-browser.default": "firefox",
   "terminal.integrated.fontFamily": "SauceCodePro Nerd Font Mono",
