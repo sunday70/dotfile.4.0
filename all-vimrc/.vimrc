@@ -12,6 +12,15 @@ set showmatch               " Show matching brackets/parenthesis
 set cursorline
 "}
 
+" --- Tab & Space
+" set list                                    " Make invisible chars visible
+" set listchars=tab:»-⋮,space:·,eol:¶         " How invisible chars are displayed
+set expandtab                               " Press Tab key will generate spaces according to tabstop setting
+set tabstop=4                               " Real tab width
+set softtabstop=2                           " How many spaces will expand from tab
+set smartindent                             " Ease editing code by smart auto indenting
+set shiftwidth=2                            " How many spaces for auto indent
+
 set hlsearch
 set incsearch
 set ignorecase
@@ -42,6 +51,12 @@ inoremap <C-p> <Up>
 inoremap <C-f> <Right>
 inoremap <C-a> <Home>
 inoremap <C-e> <End>
+
+" 删除单词
+nnoremap <Leader>d daw
+
+" 替换tab为空格
+nnoremap <Leader>rt :%ret! 2<CR>
 
 " 清除高亮
 nnoremap <Leader>sc :nohlsearch<CR>

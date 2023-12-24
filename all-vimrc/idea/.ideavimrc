@@ -34,6 +34,9 @@ inoremap <C-e> <End>
 " 格式化代码
 map \r <Action>(ReformatCode)
 
+" 删除单词
+nnoremap <Leader>d daw
+
 " 清除高亮
 nnoremap <Leader>sc :nohlsearch<CR>
 

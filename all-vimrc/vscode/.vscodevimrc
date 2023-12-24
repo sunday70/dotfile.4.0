@@ -11,3 +11,6 @@ vnoremap S L
 vnoremap J T
 vnoremap K N
 vnoremap L S
+
+" 删除单词
+nnoremap <Leader>d daw
