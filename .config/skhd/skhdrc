@@ -1,3 +1,10 @@
+# open app
+lshift + lalt - a : open -a alacritty
+lshift + lalt - b : open -a firefox
+lshift + lalt - return : open -a kitty
+lshift + lalt - m : ~/Documents/shell-script/receive_verification_code.sh
+lshift + lalt - d : ~/Documents/shell-script/get_time.sh
+
 # fast focus desktop
 lalt - l : yabai -m space --focus recent
 lalt - c : yabai -m space --focus prev || yabai -m space --focus last
@@ -78,7 +85,7 @@ lshift + lcmd - s : \
 lshift + lalt - c : yabai -m window --toggle float;\
                    yabai -m window --grid 4:4:1:1:2:2
 
-# move floating window
+# Move floating window
 lshift + lctrl - left : yabai -m window --move rel:-20:0
 lshift + lctrl - down : yabai -m window --move rel:0:20
 lshift + lctrl - up : yabai -m window --move rel:0:-20
@@ -91,8 +98,8 @@ lctrl + lalt - f : yabai -m space --balance
 lctrl + lalt - g : yabai -m space --toggle padding; yabai -m space --toggle gap
 
 # Rotate windows clockwise and anticlockwise
-lctrl + lalt - r         : yabai -m space --rotate 90
-lshift + lalt - r : yabai -m space --rotate 270
+# lctrl + lalt - r         : yabai -m space --rotate 90
+# lshift + lalt - r : yabai -m space --rotate 270
 
 # Rotate on X and Y Axis
 lshift + lalt - x : yabai -m space --mirror x-axis
@@ -111,10 +118,11 @@ lshift + lalt - left   : yabai -m window --grid 1:2:0:0:1:1
 lshift + lalt - right  : yabai -m window --grid 1:2:1:0:1:1
 
 # Restart Yabai
-lcmd + lctrl + lalt - r :
-    /usr/bin/env osascript <<< \
-        "display notification \"Restarting Yabai\" with title \"Yabai\""; \
-    launchctl kickstart -k "gui/${UID}/homebrew.mxcl.yabai"
+lcmd + lctrl + lalt - r : yabai --stop-service && yabai --start-service && skhd --stop-service && skhd --start-service
+# lcmd + lctrl + lalt - r :
+#     /usr/bin/env osascript <<< \
+#         "display notification \"Restarting Yabai\" with title \"Yabai\""; \
+#     launchctl kickstart -k "gui/${UID}/homebrew.mxcl.yabai"
 
 # Make window native fullscreen
 lalt - f         : yabai -m window --toggle zoom-fullscreen
@@ -124,12 +132,12 @@ lshift + lalt - f : yabai -m window --toggle native-fullscreen
 lalt - e : yabai -m window --toggle split
 
 # increase window size
-lshift + lalt - a : yabai -m window --resize left:-20:0
-lshift + lalt - e : yabai -m window --resize top:0:-20
+# lshift + lalt - a : yabai -m window --resize left:-20:0
+# lshift + lalt - e : yabai -m window --resize top:0:-20
 
 # decrease window size
-lshift + lalt - u : yabai -m window --resize left:20:0
-lshift + lalt - o : yabai -m window --resize top:0:20
+# lshift + lalt - u : yabai -m window --resize left:20:0
+# lshift + lalt - o : yabai -m window --resize top:0:20
 
 # destroy empty spaces
 #lshift + lalt - w : echo "destroy empty spaces";\
@@ -138,8 +146,8 @@ lshift + lalt - o : yabai -m window --resize top:0:20
 #                        | xargs -I{} yabai -m space {} --destroy \;
 
 # create and destroy spaces
-lctrl + lalt + lshift - x : yabai -m space --create
-lctrl + lshift - x : yabai -m space --destroy
+lshift + lctrl + lalt - x : yabai -m space --create
+lctrl + lalt - x : yabai -m space --destroy
 
 # send window to desktop and follow focus
 lshift + lalt - 1 : yabai -m window --space  1; yabai -m space --focus 1
@@ -169,10 +177,10 @@ lctrl + lalt - 0 : yabai -m window --space 10
 # lalt - x : yabai -m window --close && ~/.config/yabai/auto_close_space_when_space_empty.sh
 
 # Move focus container to workspace
-lctrl + lalt + lshift - z : yabai -m window --space first && yabai -m space --focus first
-lalt + lshift - z : yabai -m window --space last && yabai -m space --focus last
-lalt + lshift - b : yabai -m window --space prev && yabai -m space --focus prev
-lalt + lshift - m : yabai -m window --space next && yabai -m space --focus next
+# lshift + lctrl + lalt - z : yabai -m window --space first && yabai -m space --focus first
+# lshift + lalt - z : yabai -m window --space last && yabai -m space --focus last
+# lshift + lalt - b : yabai -m window --space prev && yabai -m space --focus prev
+# lshift + lalt - m : yabai -m window --space next && yabai -m space --focus next
 
 # change layout of desktop
 lcmd + lalt + lctrl - f : yabai -m space --layout float
