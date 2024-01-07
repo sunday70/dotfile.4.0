@@ -7,22 +7,23 @@ yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
 # 焦点
 # yabai -m config focus_follows_mouse          autoraise
 yabai -m config mouse_follows_focus          off
-yabai -m config window_placement             first_child
-# yabai -m config window_placement             second_child
 
-# 阴影 
+# 窗口生成位置
+yabai -m config window_placement             second_child  # first_child/second_child (左/右)
+
+# 阴影
 yabai -m config window_topmost               off
-yabai -m config window_shadow                float
+yabai -m config window_shadow                float  # float/off (浮动时/关闭)
 
 # 透明
 yabai -m config window_opacity               on
 yabai -m config window_opacity_duration      0.0
 yabai -m config active_window_opacity        1.0
-yabai -m config normal_window_opacity        0.95
+yabai -m config normal_window_opacity        1.0
 
 # 边框
 # yabai -m config window_border                off
-# yabai -m config window_border_width          3
+# yabai -m config window_border_width          5
 # yabai -m config active_window_border_color   0xff81a1c1
 # yabai -m config insert_feedback_color        0xff81a1c1
 # yabai -m config normal_window_border_color   0xff434c5e
@@ -34,7 +35,7 @@ yabai -m config mouse_action1                move
 yabai -m config mouse_action2                resize
 yabai -m config mouse_drop_action            swap
 
-yabai -m config layout                       bsp
+yabai -m config layout                       bsp  # bsp/float(平铺/浮动)
 yabai -m config top_padding                  10
 yabai -m config bottom_padding               10
 yabai -m config left_padding                 10
@@ -42,41 +43,56 @@ yabai -m config right_padding                10
 yabai -m config window_gap                   10
 
 
-# 应用状态
+# 设置单桌面平铺或浮动
+yabai -m config --space 1 layout float
+yabai -m config --space 4 layout float
+yabai -m config --space 5 layout float
+yabai -m config --space 6 layout float
+yabai -m config --space 7 layout float
+yabai -m config --space 8 layout float
+yabai -m config --space 9 layout float
+
+# 应用平铺状态
+yabai -m rule --add app="^Alacritty$" manage=off
 yabai -m rule --add app="^FaceTime$" manage=off
 yabai -m rule --add app="^App Store$" manage=off
 yabai -m rule --add app="^DaisyDisk$" manage=off
 yabai -m rule --add app="^Motrix$" manage=off
-yabai -m rule --add app="^System Information$" manage=off
-yabai -m rule --add app="^微信$" manage=off
 yabai -m rule --add app="^balenaEtcher$" manage=off
-yabai -m rule --add app="^Stickies$" manage=off
 yabai -m rule --add app="^AppCleaner$" manage=off
-yabai -m rule --add app="^System Preferences$" manage=off
+yabai -m rule --add app="^System Settings$" manage=off
 yabai -m rule --add app="^Finder$" manage=off
 yabai -m rule --add app="^Steam$" manage=off
 yabai -m rule --add app="^Numi$" manage=off
-yabai -m rule --add app="^Alacritty$" manage=off
-yabai -m rule --add app="^Notes$" manage=off
-yabai -m rule --add app="^iTerm2$" manage=off
-yabai -m rule --add app="^哔哩哔哩$" manage=off
 yabai -m rule --add app="^Parallels Desktop$" manage=off
 yabai -m rule --add app="^Music$" manage=off
-yabai -m rule --add app="^QQ$" manage=off
-yabai -m rule --add app="^Safari$" manage=off
+yabai -m rule --add app="^ExpressVPN$" manage=off
+yabai -m rule --add app="^Notes$" manage=off
+yabai -m rule --add app="^Keka$" manage=off
 
-# Mac亦可设定
-# yabai -m rule --add app="WeChat" space=1
-# yabai -m rule --add app="Firefox" space=2
-# yabai -m rule --add app="kitty" space=3
-# yabai -m rule --add app="Mail" space=6
-# yabai -m rule --add app="Spotify" space=7
+# 应用开启所属空间
+# yabai -m rule --add app="^微信$" space=1
+# yabai -m rule --add app="^WeChat$" space=1
+# yabai -m rule --add app="^Firefox$" space=2
+# yabai -m rule --add app="^kitty$" space=3
+# yabai -m rule --add app="^IntelliJ IDEA$" space=4
+# yabai -m rule --add app="^Visual Studio Code$" space=4
+# yabai -m rule --add app="^Visual Studio$" space=4
+# yabai -m rule --add app="^Navicat Premium$" space=5
+# yabai -m rule --add app="^Stickies$" space=5
+# yabai -m rule --add app="^Microsoft Word$" space=6
+# yabai -m rule --add app="^Microsoft Excel$" space=6
+# yabai -m rule --add app="^Microsoft PowerPoint$" space=6
+# yabai -m rule --add app="^Mail$" space=6
+# yabai -m rule --add app="^Spotify$" space=7
+# yabai -m rule --add app="^Music$" space=7
 
 # show on all spaces
 # yabai -m rule --add app="^Alacritty$" sticky=on
 # yabai -m rule --add app="^Stickies$" sticky=on
 # yabai -m rule --add app="^Numi$" sticky=on
 # yabai -m rule --add app="^Notion$" sticky=on
+# yabai -m rule --add app="^备忘录$" sticky=on
 
 # all display top
 # yabai -m config external_bar all:32:0
