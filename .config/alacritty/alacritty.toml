@@ -1,0 +1,121 @@
+[cursor]
+style = { shape = "Underline", blinking = "Always" }
+blink_interval = 650
+
+[window]
+padding = { x = 6, y = 6 }
+decorations = "buttonless"
+opacity = 0.79
+blur = true
+dynamic_title = false
+
+[scrolling]
+history = 10000
+multiplier = 3
+
+[font]
+normal = { family = "SauceCodePro NFM", style = "Regular" }
+bold = { family = "SauceCodePro NFM", style = "Bold" }
+italic = { family = "SauceCodePro NFM", style = "Italic" }
+bold_italic = { family = "SauceCodePro NFM", style = "Bold ltalic" }
+size = 15
+offset = { x = 1, y = 1 }
+glyph_offset = { x = 0, y = 1 }
+# use_thin_strokes = false
+
+[selection]
+save_to_clipboard = true
+
+# everforest copied from kitty.conf
+[colors.bright]
+black =   '#525c62'
+red =     '#e68183'
+green =   '#a7c080'
+yellow =  '#dbbc7f'
+blue =    '#7fbbb3'
+magenta = '#d699b6'
+cyan =    '#83c092'
+white =   '#d8caac'
+
+[colors.cursor]
+cursor =  '#7fbbb3'
+
+[colors.normal]
+black =   '#4a555b'
+red =     '#e68183'
+green =   '#a7c080'
+yellow =  '#dbbc7f'
+blue =    '#7fbbb3'
+magenta = '#d699b6'
+cyan =    '#83c092'
+white =   '#d8caac'
+
+[colors.primary]
+background = '#323d43'
+foreground = '#d8cacc'
+
+[colors.selection]
+background = '#3c474d'
+text =       '#525c62'
+
+# everforest_medium
+# [colors.bright]
+# black =   '#475258'
+# red =     '#e67e80'
+# green =   '#a7c080'
+# yellow =  '#dbbc7f'
+# blue =    '#7fbbb3'
+# magenta = '#d699b6'
+# cyan =    '#83c092'
+# white =   '#d3c6aa'
+#
+# [colors.normal]
+# black =   '#475258'
+# red =     '#e67e80'
+# green =   '#a7c080'
+# yellow =  '#dbbc7f'
+# blue =    '#7fbbb3'
+# magenta = '#d699b6'
+# cyan =    '#83c092'
+# white =   '#d3c6aa'
+#
+# [colors.primary]
+# background = '#2d353b'
+# foreground = '#d3c6aa'
+#
+# [colors.selection]
+# background = '#d3c6aa'
+# text =       '#475258'
+
+# nord
+# [colors.bright]
+# black =   '#4c566a'
+# blue =    '#81a1c1'
+# cyan =    '#8fbcbb'
+# green =   '#a3be8c'
+# magenta = '#b48ead'
+# red =     '#bf616a'
+# white =   '#eceff4'
+# yellow =  '#ebcb8b'
+#
+# [colors.cursor]
+# cursor =  '#eceff4'
+# text =    '#282828'
+#
+# [colors.normal]
+# black =   '#3b4252'
+# blue =    '#81a1c1'
+# cyan =    '#88c0d0'
+# green =   '#a3be8c'
+# magenta = '#b48ead'
+# red =     '#bf616a'
+# white =   '#e5e9f0'
+# yellow =  '#ebcb8b'
+#
+# [colors.primary]
+# background = '#2e3440'
+# foreground = '#d8dee9'
+#
+# [colors.selection]
+# background = '#eceff4'
+# text =       '#4c566a'
