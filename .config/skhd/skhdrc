@@ -1,6 +1,6 @@
 # open app
-lshift + lalt - a : open -a alacritty
-lshift + lalt - b : open -a firefox
+lshift + lalt - a : open -a Alacritty
+lshift + lalt - b : open -a Firefox
 lshift + lalt - return : open -a kitty
 lshift + lalt - m : ~/Documents/shell-script/receive_verification_code.sh
 lshift + lalt - d : ~/Documents/shell-script/get_time.sh

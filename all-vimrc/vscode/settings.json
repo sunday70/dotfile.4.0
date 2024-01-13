@@ -3,11 +3,21 @@
   // Controls the font family.
   "editor.fontFamily": "SauceCodePro Nerd Font Mono",
   "editor.fontSize": 15,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.formatOnSave": true,
   "terminal.integrated.fontWeightBold": "bold",
   "open-in-browser.default": "firefox",
   "terminal.integrated.fontFamily": "SauceCodePro Nerd Font Mono",
   "explorer.confirmDelete": false,
-  "workbench.colorTheme": "Nord",
+  "workbench.colorTheme": "Everforest Dark",
   "json.schemas": [
 
   ],
@@ -211,5 +221,8 @@
       ]
     }
   ],
-  "editor.lineNumbers": "relative"
+  "editor.lineNumbers": "relative",
+  "editor.tabSize": 2,
+  "everforest.darkContrast": "soft",
+  "everforest.lightContrast": "soft",
 }
