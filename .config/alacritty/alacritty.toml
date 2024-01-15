@@ -6,6 +6,9 @@ blink_interval = 650
 program = "/opt/homebrew/bin/zsh"
 args = ["-l", "-c", "tmux attach || tmux"]
 
+[env]
+TERM = "xterm-256color"
+
 [window]
 padding = { x = 6, y = 6 }
 decorations = "buttonless"
