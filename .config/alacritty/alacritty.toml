@@ -2,10 +2,14 @@
 style = { shape = "Underline", blinking = "Always" }
 blink_interval = 650
 
+[shell]
+program = "/opt/homebrew/bin/zsh"
+args = ["-l", "-c", "tmux attach || tmux"]
+
 [window]
 padding = { x = 6, y = 6 }
 decorations = "buttonless"
-opacity = 0.79
+opacity = 0.95
 blur = true
 dynamic_title = false
 
