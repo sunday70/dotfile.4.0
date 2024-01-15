@@ -172,15 +172,15 @@ handle_mime() {
         ## DjVu
         image/vnd.djvu)
             ## Preview as text conversion (requires djvulibre)
-            djvutxt "${FILE_PATH}" | fmt -w "${PREVIEW_WIDTH}" && exit 0
-            exiftool "${FILE_PATH}" && exit 0
-            exit 1;;
+            # djvutxt "${FILE_PATH}" | fmt -w "${PREVIEW_WIDTH}" && exit 0
+            # exiftool "${FILE_PATH}" && exit 0
+            # exit 1;;
 
         ## Image
         image/*)
             ## Preview as text conversion
-            exiftool "${FILE_PATH}" && exit 0
-            exit 1;;
+            # exiftool "${FILE_PATH}" && exit 0
+            # exit 1;;
 
         ## Video and audio
         video/* | audio/*)
