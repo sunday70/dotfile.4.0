@@ -38,6 +38,7 @@ reader_default	= [
 ]
 
 libreoffice_default	= [
+	{ command = "open" },
 	{ command = "libreoffice", fork = true, silent = true },
 ]
 
