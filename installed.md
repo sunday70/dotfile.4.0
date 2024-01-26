@@ -1,4 +1,6 @@
 ## brew
+* --tap
+brew tap homebrew/cask-fonts
 * --formulae
 starship nano translate-shell htop neofetch tree fish neovim ranger fzf vim w3m skhd smartmontools cmatrix mas p7zip cowsay yabai youtube-dl pfetch tmux neomutt
 * --cask
